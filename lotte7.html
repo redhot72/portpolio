@@ -19,10 +19,12 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
-
+    <script type="text/javascript">
+        document.oncontextmenu = function(){return false;}
+    </script>
 </head>
 
-<body id="page-top">
+<body id="page-top" oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -223,7 +225,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
                                 <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">3+</span>
+                                <span class="badge badge-danger badge-counter">2+</span>
                             </a>
                             <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -238,8 +240,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">2024 07 05</div>
-                                        <span class="font-weight-bold">새로운 포트폴리오 추가</span>
+                                        <div class="small text-gray-500">2024 06 25</div>
+                                        <span class="font-weight-bold">이미지도용시 법의 의해 처벌 받습니다. 여기는 상업적이 아닌 개인 포트폴리오 작업 공간 사이트입니다.가</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -249,8 +251,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">2024 07 05</div>
-                                        사이트 새로 오픈
+                                        <div class="small text-gray-500">2024 06 25</div>
+                                        포트폴리오 사이트 오픈
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">닫기</a>
@@ -273,7 +275,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal2">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -285,11 +287,11 @@
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Activity Log
                                 </a> -->
-                                <div class="dropdown-divider"></div>
+                                <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
-                                </a>
+                                </a> -->
                             </div>
                         </li>
 
@@ -558,6 +560,30 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
+    <!-- Profile Modal-->
+    <div class="modal fade" id="logoutModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pro-history">
+                    <li>2024.03~2024.05 롯데칠성 스마트오더시스템 퍼블리셔(PC,Mobile) react기반•XD•Zeplin•AWS</li>
+                    <li>2023.10~2024.01 LG에너지솔루션(물류가상화시스템, 재고관리/결함시스템) 기획/디자인/퍼블 react기반•XD•Zeplin	</li>
+                </div>
+                    </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
