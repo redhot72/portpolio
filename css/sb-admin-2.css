@@ -5789,8 +5789,13 @@ a.close.disabled {
   flex: 1 1 auto;
   padding: 1rem;
 }
+.modal-body .pro-history{
+  padding: 10px;
+}
 .modal-body .pro-history li{
   font-size: 0.9rem;
+  padding-left: 10px;
+    text-indent: -20px;
   padding-bottom: 10px;
 }
 
